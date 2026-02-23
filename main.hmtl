@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Modern University e-Gov Portal Landing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              background: "#0B0B0F", // Deep charcoal/black
+              surface: "#141419",
+              border: "rgba(255, 255, 255, 0.08)",
+              primary: "#5E6AD2",
+              "primary-hover": "#7C88E8",
+              "text-main": "#EEEEF0",
+              "text-muted": "#8A8F98",
+              "text-subtle": "#62666E",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            boxShadow: {
+              'glow': '0 0 40px -10px rgba(94, 106, 210, 0.3)',
+              'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+              'glass': 'linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.0) 100%)',
+            }
+          },
+        },
+      };
+    </script>
+<style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0B0B0F;
+        color: #EEEEF0;
+        -webkit-font-smoothing: antialiased;
+      }
+      .linear-border {
+        position: relative;
+      }
+      .linear-border::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0) 100%);
+      }
+      .glass-card {
+        background: rgba(20, 20, 25, 0.6);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      }::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2a2a30;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #3e3e45;
+      }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-primary/30 selection:text-white overflow-x-hidden">
+<div class="fixed inset-0 pointer-events-none z-0">
+<div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary/5 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-600/5 blur-[120px] rounded-full"></div>
+</div>
+<header class="w-full border-b border-white/[0.06] bg-[#0B0B0F]/80 backdrop-blur-md sticky top-0 z-50">
+<div class="max-w-[1400px] mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-3 group cursor-pointer">
+<div class="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-xs shadow-glow">
+                    KTU
+                </div>
+<div class="flex flex-col">
+<h1 class="text-sm font-medium tracking-wide text-text-main group-hover:text-white transition-colors hidden sm:block">APJ Abdul Kalam Technological University</h1>
+<h1 class="text-sm font-medium tracking-wide sm:hidden">APJAKTU</h1>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-[13px] font-medium text-text-muted">
+<a class="hover:text-white transition-colors duration-200" href="#">Home</a>
+<a class="hover:text-white transition-colors duration-200" href="#">Research</a>
+<a class="hover:text-white transition-colors duration-200" href="#">FAQ</a>
+<a class="hover:text-white transition-colors duration-200" href="#">Contact Us</a>
+</nav>
+<button class="md:hidden text-text-muted hover:text-white transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow w-full max-w-[1400px] mx-auto px-6 py-12 lg:py-20 relative z-10 grid lg:grid-cols-12 gap-16 lg:gap-24 items-start">
+<div class="lg:col-span-7 space-y-16">
+<div class="space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/[0.02] text-xs font-medium text-primary mb-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+  e-Governance Portal v2.0
+</div>
+<h2 class="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-white leading-[1.1]">
+        Streamlining <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">academic futures.</span>
+</h2>
+<p class="text-lg text-text-muted leading-relaxed max-w-2xl font-light">
+        The central hub for institutions, students, and administration to collaborate, manage records, and drive educational innovation.
+      </p>
+</div>
+<div class="grid gap-px bg-white/[0.06] border border-white/[0.06] rounded-2xl overflow-hidden shadow-2xl">
+<div class="group bg-[#0B0B0F] hover:bg-[#121216] p-8 transition-all duration-300 relative">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-shrink-0">
+<div class="w-12 h-12 rounded-xl bg-white/[0.03] border border-white/[0.06] flex items-center justify-center text-text-muted group-hover:text-primary group-hover:border-primary/20 group-hover:bg-primary/5 transition-all duration-300">
+<span class="material-symbols-outlined text-[24px]">account_balance</span>
+</div>
+</div>
+<div class="space-y-2">
+<h3 class="text-lg font-medium text-text-main group-hover:text-white transition-colors">Institutions</h3>
+<p class="text-sm text-text-muted leading-relaxed font-light">
+              Manage affiliations, student registrations, academics, and fee payments. Access student records, mark lists, and curriculum details.
+            </p>
+</div>
+</div>
+</div>
+<div class="group bg-[#0B0B0F] hover:bg-[#121216] p-8 transition-all duration-300 relative">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-shrink-0">
+<div class="w-12 h-12 rounded-xl bg-white/[0.03] border border-white/[0.06] flex items-center justify-center text-text-muted group-hover:text-emerald-400 group-hover:border-emerald-400/20 group-hover:bg-emerald-400/5 transition-all duration-300">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+</div>
+<div class="space-y-2">
+<h3 class="text-lg font-medium text-text-main group-hover:text-white transition-colors">Students</h3>
+<p class="text-sm text-text-muted leading-relaxed font-light">
+              Access personalized dashboards for academic details, attendance, results, and credits. Download official mark lists securely.
+            </p>
+</div>
+</div>
+</div>
+<div class="group bg-[#0B0B0F] hover:bg-[#121216] p-8 transition-all duration-300 relative">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-shrink-0">
+<div class="w-12 h-12 rounded-xl bg-white/[0.03] border border-white/[0.06] flex items-center justify-center text-text-muted group-hover:text-amber-400 group-hover:border-amber-400/20 group-hover:bg-amber-400/5 transition-all duration-300">
+<span class="material-symbols-outlined text-[24px]">admin_panel_settings</span>
+</div>
+</div>
+<div class="space-y-2">
+<h3 class="text-lg font-medium text-text-main group-hover:text-white transition-colors">University Administration</h3>
+<p class="text-sm text-text-muted leading-relaxed font-light">
+              Manage master data, programs, and academic calendars. Configure clusters and govern department rules efficiently.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 lg:mt-12 relative">
+<div class="sticky top-24">
+<div class="absolute -inset-0.5 bg-gradient-to-b from-primary/30 to-purple-600/10 rounded-2xl blur-2xl opacity-20 pointer-events-none"></div>
+<div class="glass-card rounded-2xl p-8 sm:p-10 relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white/[0.05] to-transparent pointer-events-none"></div>
+<div class="relative z-10 mb-8">
+<div class="w-10 h-10 mb-6 rounded-lg bg-white/[0.05] border border-white/[0.1] flex items-center justify-center">
+<span class="material-symbols-outlined text-white">lock_person</span>
+</div>
+<h3 class="text-xl font-medium text-white mb-1">Sign In</h3>
+<p class="text-sm text-text-muted">Enter your credentials to access the dashboard.</p>
+</div>
+<form class="space-y-5 relative z-10" onsubmit="event.preventDefault();">
+<div class="space-y-1.5">
+<label class="block text-xs font-medium text-text-muted uppercase tracking-wider ml-1" for="username">Username</label>
+<div class="relative group">
+<input class="block w-full py-3 px-4 bg-[#0B0B0F]/50 border border-white/[0.1] rounded-lg text-white placeholder-text-subtle focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all text-[14px] shadow-sm group-hover:border-white/[0.15]" id="username" placeholder="Enter username" type="text"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="block text-xs font-medium text-text-muted uppercase tracking-wider ml-1" for="password">Password</label>
+<div class="relative group">
+<input class="block w-full py-3 px-4 bg-[#0B0B0F]/50 border border-white/[0.1] rounded-lg text-white placeholder-text-subtle focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all text-[14px] shadow-sm group-hover:border-white/[0.15]" id="password" placeholder="Enter password" type="password"/>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<a class="text-xs text-text-muted hover:text-white transition-colors" href="#">Forgot password?</a>
+</div>
+<button class="w-full group flex items-center justify-center py-3 px-4 border border-transparent rounded-lg shadow-glow text-sm font-medium text-white bg-primary hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#0B0B0F] focus:ring-primary transition-all duration-200" type="submit">
+                Sign In
+                <span class="material-symbols-outlined text-base ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</form>
+<div class="mt-8 pt-6 border-t border-white/[0.06] text-center relative z-10">
+<p class="text-[11px] text-text-subtle">
+                By signing in, you agree to our <a class="hover:text-white transition-colors underline decoration-white/20 underline-offset-2" href="#">Terms of Service</a> and <a class="hover:text-white transition-colors underline decoration-white/20 underline-offset-2" href="#">Privacy Policy</a>.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="border-t border-white/[0.06] bg-[#0B0B0F] py-12 mt-auto relative z-10">
+<div class="max-w-[1400px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-4">
+<div class="w-6 h-6 rounded bg-white/[0.05] flex items-center justify-center text-text-muted text-[10px]">
+        KTU
+    </div>
+<p class="text-xs text-text-subtle">
+        © 2014-2024 APJ Abdul Kalam Technological University. All rights reserved.
+    </p>
+</div>
+<div class="flex space-x-6">
+<a class="text-text-muted hover:text-white transition-colors" href="#">
+<span class="sr-only">Facebook</span>
+<svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-text-muted hover:text-white transition-colors" href="#">
+<span class="sr-only">Twitter</span>
+<svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+
+</body></html>
