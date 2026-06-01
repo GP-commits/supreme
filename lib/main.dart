@@ -12,6 +12,7 @@ import 'screens/messages_screen.dart';
 import 'screens/item_details_screen.dart';
 
 void main() async {
+  throw Exception("Code temporarily disabled by Sivadarsh. Revert this change to run.");
   WidgetsFlutterBinding.ensureInitialized();
   // Note: Firebase.initializeApp() will fail until google-services.json is added
   try {
